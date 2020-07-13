@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Beyond</title>
+    <link rel="icon" href="/img/logo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Space Beyond
+            </a>
+        </nav>
+    </div>
+    <section class="d-flex container">
+        <div class="container col-4">
+            <div class="card">
+                <h5 class="card-header">Game Information</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Inspired by Asteroids (Atari 1997) </h5>
+                    <h6 class="card-title">What your name soldier?</h6>
+
+
+                    <p class="card-text"></p>
+                    <div class="input-group mb-3">
+                        <input id="input-name" type="text" class="form-control" placeholder="Input name to start" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button onclick="start()" class="btn btn-primary" type="button" id="button-addon2">Start!</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Instruction</h5>
+                    <div class="card-body">
+                        <h6 class="card-title">Navigate your spaceship accross the interstellar while avoiding asteroids. Destroy asteroids to gain points and upgrade</h6>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Keyboard</th>
+                                    <th scope="col">Functions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Up Arrow</th>
+                                    <td>Accelerate Ship</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Left Arrow</th>
+                                    <td>Rotate Left</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Righ Arrow</th>
+                                    <td>Rotate Right</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Space</th>
+                                    <td>Shoot Bullets</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-8 canvas-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Lives</th>
+                        <th scope="col">Levels</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="player" scope="row"></th>
+                        <td id="score"></td>
+                        <td id="live"></td>
+                        <td id="level"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="container canvas-container">
+                <canvas id="gameCanvas" width="700" height="500"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container d-flex">
+        <div class="col-4"></div>
+
+        <div class="col-8"> <embed name="lostmojo" src="/sound/Bach-cello-suite-1.mp3" width="100%" height="90" loop="true" autostart="true">
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
